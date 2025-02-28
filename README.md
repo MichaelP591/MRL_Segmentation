@@ -108,7 +108,7 @@ Processed data will save in `data/stanford_indoor3d/`.
 ```
 ## Check model in ./models 
 ## e.g., pointnet2_ssg
-python train_semseg.py --model pointnet2_sem_seg --test_area 5 --log_dir pointnet2_sem_seg
+python .\prepocessed_data\formatpointcloud.py .\prepocessed_data\ourowndata.txt
 python test_semseg.py --log_dir pointnet2_sem_seg --test_area 1 --visual
 ```
 Visualization results will save in `log/sem_seg/pointnet2_sem_seg/visual/` and you can visualize these .obj file by [MeshLab](http://www.meshlab.net/).
